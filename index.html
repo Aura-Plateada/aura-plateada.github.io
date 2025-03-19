@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="styles.css"> <!-- Archivo CSS personalizado -->
 </head>
 <body>
-
+<!-- Imagen de fondo difuminada-->
     <!-- Barra de navegación -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
@@ -29,9 +29,20 @@
                 <!--<form class="d-flex ms-auto">
                     <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
                     <button class="btn btn-outline-success" type="submit">Buscar</button>
-                </form> -->
+                </form> Se necesita JavaScript-->
             </div>
         </div>
+        <!-- Selector de idioma en la Navbar -->
+<!--<div class="dropdown ms-auto">
+    <button class="btn btn-outline-light dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown">
+        🌍 Idioma
+    </button>
+    <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#" onclick="changeLanguage('es')">🇪🇸 Español</a></li>
+        <li><a class="dropdown-item" href="#" onclick="changeLanguage('en')">🇬🇧 English</a></li>
+    </ul>
+</div> Se necesita JavaScript, además, no sé si hacerlo, pues desde el navegador se puede cambiar el idioma con google translate-->
+
     </nav>
 
     <!-- Sección principal -->
@@ -73,7 +84,19 @@
     <!-- Sección Novedades-->
     <section class="container mt-4">
       <h3>Novedades y en progreso</h3>
+      <p><b>Actualización del 20/03/2025</b>: Se ha reorganizado los proyectos y se han añadido novedades.
+        Trabajamos en la filosofía del Aura Plateada, está subido en pdf, pero se actualiza semanalmente, visita si le interesa el tema.</p>
       <div class="row">
+        <div class="col-md-4">
+            <div class="card">
+                <img src="Fili.jpg" class="card-img-top" alt="Filosofía Aura Plateada">
+                <div class="card-body">
+                    <h5 class="card-title">Filosofía Aura Plateada</h5>
+                    <p class="card-text">Estos son los primeros pasos de la filosofía del Aura Plateada, por ahora se explora la metafísica.</p>
+                    <a href="https://drive.google.com/drive/folders/1t8wh_7CATNsTMitikfwjdDPfHO7Ssvp1?usp=sharing" class="btn btn-primary">Ver más</a>
+                </div>
+            </div>
+        </div>
           <div class="col-md-4">
               <div class="card">
                   <img src="logo.png" class="card-img-top" alt="Ideas">
@@ -94,19 +117,8 @@
                   </div>
               </div>
           </div>
-          <div class="col-md-4">
-            <div class="card">
-                <img src="Fili.jpg" class="card-img-top" alt="Filosofía Aura Plateada">
-                <div class="card-body">
-                    <h5 class="card-title">Filosofía Aura Plateada</h5>
-                    <p class="card-text">Estos son los primeros pasos de la filosofía del Aura Plateada, por ahora se explora la metafísica.</p>
-                    <a href="https://drive.google.com/file/d/14SptQvtCBAUP2urvzc1FYCyvvCA6SPD1/view?usp=sharing" class="btn btn-primary">Ver más</a>
-                </div>
-            </div>
-        </div>
+          
       </div>
-      <p>Se está trabajando en un Formulario Resumen de Tecnología e Ingeniería II para la PAU de Canarias.
-        También se está trabajando en un documento de la filosofía del Aura Plateada.</p>
   </section>
 
     <!-- Footer -->
