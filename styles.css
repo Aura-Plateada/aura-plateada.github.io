@@ -22,3 +22,34 @@ header img {
     font-weight: normal;
     font-style: normal;
 }
+
+/* Estilos para la galería de imágenes */
+.gallery-container {
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 10px;
+}
+
+.gallery-image {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.gallery-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    border-color: #2d633b;
+}
+
+.gallery-title {
+    color: #2d633b;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.gallery-description {
+    font-size: 0.9rem;
+    color: #6c757d;
+    font-style: italic;
+}
