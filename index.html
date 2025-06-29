@@ -22,10 +22,22 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link active" href="index.html">Inicio</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="subpaginasDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Centinela
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="Centinela">
+                            <li><a class="dropdown-item" href="centinela.html">La Mirada del Centinela</a></li>
+                            <li><a class="dropdown-item" href="actual.html">Actual</a></li>
+                            <li><a class="dropdown-item" href="comics.html">Cómics</a></li>
+                            <li><a class="dropdown-item" href="personajes.html">Personajes</a></li>
+                        </ul>
+                    </li>
                     <li class="nav-item"><a class="nav-link" href="proyectos.html">Proyectos</a></li>
                     <!--<li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li> -->
                     <li class="nav-item"><a class="nav-link" href="sobremi.html">Sobre mí</a></li>
                     <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                    
                 </ul>
                 <!--<form class="d-flex ms-auto">
                     <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
@@ -33,6 +45,7 @@
                 </form> Se necesita JavaScript-->
             </div>
         </div>
+        
         <!-- Selector de idioma en la Navbar -->
 <!--<div class="dropdown ms-auto">
     <button class="btn btn-outline-light dropdown-toggle" type="button" id="languageDropdown" data-bs-toggle="dropdown">
@@ -58,16 +71,15 @@
     <!-- Sección de tarjetas -->
     <section class="container mt-4">
       <h3>Último Proyecto Activo</h3> 
-      <p><b>La Mirada del Centinela</b>: Un juego de rol de ambientación tipo Batman.
+      <p><b>La Mirada del Centinela</b>: Un juego de rol de Nosolorol, en una ambientación de vigilantes enmascarados (se explica mejor más adelante).
         Aquí se encuentra todo el material necesario. Este material está usado por nosotros para varias campañas, 
-        hay muchos archivos. Si desea jugar, contáctanos. Se irá actualizando con los próximas partidas.</p>
+        hay muchos archivos. Si desea jugar o tiene usted material propio o conseguido de LMDC, contáctanos. Se irá actualizando con las próximas partidas.</p>
         <div class="row">
             <div class="col-md-6">
                 <div class="card">
-                    <img src="image/144.png" class="card-img-top" alt="la Mirada del Centinela">
+                    <img src="image\Centinela\logolmdc.png" class="card-img-top" alt="la Mirada del Centinela">
                     <div class="card-body">
                         <h5 class="card-title">La Mirada del Centinela</h5>
-                        <p class="card-text">Ambientación de rol de Savage Worlds.</p>
                         <p class="card-text">Bienvenidos a La Mirada del Centinela, un juego de rol ambientado en un 
                             mundo muy parecido al nuestro, donde el crimen y la corrupción plagan la ciudad de Betlam. 
                             Aquí, no existen los superpoderes, pero un equipo de individuos excepcionales, conocido como 
@@ -78,111 +90,12 @@
                             esplendor para el equipo, marcado por la nueva integración de Norman Hills y El Péndulo 
                             (tras los hechos de Sentinel #262), aunque la némesis del Centinela, El Profesor Hypnos, un 
                             antiguo aliado del Centinela, a quedado desaparecido desde su último encuentro.</p>
-                        <a href="https://drive.google.com/drive/folders/1Liscoym1YUztddjE4LzLntMWX2Eg6zFs?usp=sharing" class="btn btn-primary">Ver más</a>
+                        <p class="card-text">Ambientación de rol de Savage Worlds.</p>
+                        <a href="centinela.html" class="btn btn-primary">Ver más</a>
                     </div>
                 </div>
             </div>
-            <div class="col-md-6">
-                <div class="gallery-container">
-                    <h5 class="gallery-title">Galería del Proyecto</h5>
-                    <div class="row g-2">
-                        <div class="col-6">
-                            <img src="image/LMDC.jpg" class="img-fluid rounded shadow-sm gallery-image" alt="La Mirada del Centinela" style="height: 100%; object-fit: cover; width: 100%;">
-                        </div>
-                        <div class="col-6">
-                            <img src="image/ProfesorHypnos.jpg" class="img-fluid rounded shadow-sm gallery-image" alt="PH" style="height: 100%; object-fit: cover; width: 50%;">
-                        </div>
-                        <div class="col-6">
-                            <img src="image/Sentinel262.jpg" class="img-fluid rounded shadow-sm gallery-image" alt="S262" style="height: 100%; object-fit: cover; width: 100%;">
-                        </div>
-                        <div class="col-6">
-                            <img src="image/LaPrimeraFormaciónPARTE1.png" class="img-fluid rounded shadow-sm gallery-image" alt="Equipo" style="height: 120px; object-fit: cover; width: 100%;">
-                        </div>
-                    </div>
-                    <p class="gallery-description mt-2">Imágenes: Portada Original, Antagonista, Portada del último cómic jugado, Protagonistas</p>
-                </div>
-            </div>
-            <div class="col-12">
-                <div class="gallery-container">
-                    <h5 class="gallery-title">Comics</h5>
-                    <div class="row g-2">
-                        <div class="col-3">
-                            <img src="image/A.jpg" class="img-fluid rounded shadow-sm gallery-image" alt="" style="height: 100%; width: 100%;">
-                        </div>
-                        <div class="col-3">
-                            <img src="image/B.jpg" class="img-fluid rounded shadow-sm gallery-image" alt="" style="height: 100%; width: 100%;">
-                        </div>
-                        <div class="col-3">
-                            <img src="image/C.jpg" class="img-fluid rounded shadow-sm gallery-image" alt="" style="height: 100%; width: 100%;">
-                        </div>
-                        <div class="col-3">
-                            <img src="image/D.jpg" class="img-fluid rounded shadow-sm gallery-image" alt="" style="height: 100%; width: 100%;">
-                        </div>
-                        <div class="col-3">
-                            <img src="image/E.jpg" class="img-fluid rounded shadow-sm gallery-image" alt="" style="height: 100%; width: 100%;">
-                        </div>
-                        <div class="col-3">
-                            <img src="image/F.jpg" class="img-fluid rounded shadow-sm gallery-image" alt="" style="height: 100%; width: 100%;">
-                        </div>
-                        <div class="col-3">
-                            <img src="image/G.jpg" class="img-fluid rounded shadow-sm gallery-image" alt="" style="height: 100%; width: 100%;">
-                        </div>
-                        <div class="col-3">
-                            <img src="image/H.jpg" class="img-fluid rounded shadow-sm gallery-image" alt="" style="height: 100%; width: 100%;">
-                        </div>
-                        <div class="col-3">
-                            <img src="image/I.jpg" class="img-fluid rounded shadow-sm gallery-image" alt="" style="height: 100%; width: 100%;">
-                        </div>
-                        <div class="col-3">
-                            <img src="image/J.jpg" class="img-fluid rounded shadow-sm gallery-image" alt="" style="height: 100%; width: 100%;">
-                        </div>
-                        <div class="col-3">
-                            <img src="image/K.jpg" class="img-fluid rounded shadow-sm gallery-image" alt="" style="height: 100%; width: 100%;">
-                        </div>
-                        <div class="col-3">
-                            <img src="image/L.jpg" class="img-fluid rounded shadow-sm gallery-image" alt="" style="height: 100%; width: 100%;">
-                        </div>
-                        <div class="col-3">
-                            <img src="image/M.jpg" class="img-fluid rounded shadow-sm gallery-image" alt="" style="height: 100%; width: 100%;">
-                        </div>
-                        <div class="col-3">
-                            <img src="https://drive.google.com/uc?export=view&id=1q2c9p28LKcZEOztU9G4aOcPeWTY_jEZb" alt="Descripción" class="img-fluid rounded shadow-sm gallery-image" alt="" style="height: 100%; width: 100%;">
-                        </div>
-                        <div class="col-3">
-                            <img src="image/IC90.jpg" class="img-fluid rounded shadow-sm gallery-image" alt="" style="height: 100%; width: 100%;">
-                        </div>
-                        <div class="col-3">
-                            <img src="image/IC290.jpg" class="img-fluid rounded shadow-sm gallery-image" alt="" style="height: 100%; width: 100%;">
-                        </div>
-                        <div class="col-3">
-                            <img src="image/IC306.jpg" class="img-fluid rounded shadow-sm gallery-image" alt="" style="height: 100%; width: 100%;">
-                        </div>
-                        <div class="col-3">
-                            <img src="image/S139.jpg" class="img-fluid rounded shadow-sm gallery-image" alt="" style="height: 100%; width: 100%;">
-                        </div>
-                        <div class="col-3">
-                            <img src="image/S206.jpg" class="img-fluid rounded shadow-sm gallery-image" alt="" style="height: 100%; width: 100%;">
-                        </div>
-                        <div class="col-3">
-                            <img src="image/S227.jpg" class="img-fluid rounded shadow-sm gallery-image" alt="" style="height: 100%; width: 100%;">
-                        </div>
-                        <div class="col-3">
-                            <img src="image/S262.jpg" class="img-fluid rounded shadow-sm gallery-image" alt="" style="height: 100%; width: 100%;">
-                        </div>
-                        <div class="col-3">
-                            <img src="image/T.jpg" class="img-fluid rounded shadow-sm gallery-image" alt="" style="height: 100%; width: 100%;">
-                        </div>
-                        <div class="col-3">
-                            <img src="image/U.jpg" class="img-fluid rounded shadow-sm gallery-image" alt="" style="height: 100%; width: 100%;">
-                        </div>
-                        <div class="col-3">
-                            <img src="image/V.jpg" class="img-fluid rounded shadow-sm gallery-image" alt="" style="height: 100%; width: 100%;">
-                        </div>
-                    </div>
-                    <p class="gallery-description mt-2">Listado de portadas de comics diseñadas hasta la fecha (junio de 1968).</p>
-                </div>
-            </div>
-        </div>
+           
     </section>
 
     <!-- Sección Novedades-->
