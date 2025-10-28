@@ -1,0 +1,126 @@
+/* Estilos personalizados para las páginas de Centinela */
+
+/* Definir fuentes personalizadas */
+@font-face {
+    font-family: "Arial Narrow";
+    src: url("../../../fonts/arialnarrow.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Eurostile";
+    src: url("../../../fonts/Eurostile Bold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Aplicar Arial Narrow al cuerpo de texto */
+body {
+    font-family: "Arial Narrow", Arial, sans-serif;
+}
+
+/* Aplicar Eurostile Bold a todos los encabezados y títulos */
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Eurostile", "Arial Narrow", Arial, sans-serif;
+    font-weight: bold;
+}
+
+.null-text {
+            color: #ffffff;
+        }
+
+/* Aplicar Eurostile a elementos de navegación */
+.navbar-brand,
+.nav-link,
+.dropdown-item,
+.btn {
+    font-family: "Eurostile", "Arial Narrow", Arial, sans-serif;
+}
+
+/* Aplicar Eurostile a títulos de tarjetas */
+.card-title,
+.card-header,
+.alert-heading {
+    font-family: "Eurostile", "Arial Narrow", Arial, sans-serif;
+    font-weight: bold;
+}
+
+/* Mantener compatibilidad con estilos heredados */
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+header img {
+    max-width: 50%;
+    height: auto;
+}
+
+/* Estilos para la galería de imágenes */
+.gallery-container {
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 10px;
+}
+
+.gallery-image {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.gallery-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    border-color: #2d633b;
+}
+
+.gallery-title {
+    color: #2d633b;
+    font-weight: bold;
+    margin-bottom: 15px;
+    font-family: "Eurostile", "Arial Narrow", Arial, sans-serif;
+}
+
+.gallery-description {
+    font-size: 0.9rem;
+    color: #6c757d;
+    font-style: italic;
+}
+
+/* Estilos para botones circulares de navegación del libro */
+.btn-nav-libro {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #bdcbb9;
+    color: #9ca899;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 3px solid #d3d2d2;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.btn-nav-libro span {
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: "Eurostile", "Arial Narrow", Arial, sans-serif;
+}
+
+.btn-nav-libro:hover,
+.btn-nav-libro:focus,
+.btn-nav-libro.active {
+    background-color: #416e4d;
+    border-color: #231f20;
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+}
+
+.btn-nav-libro:active {
+    transform: scale(0.98);
+}

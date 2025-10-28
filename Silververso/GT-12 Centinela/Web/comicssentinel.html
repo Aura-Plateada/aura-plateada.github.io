@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Comics del Centinela - La Mirada del Centinela</title>
+    <link rel="icon" href="../../../image/favicon.png" type="image/x-icon">
+    <!-- Enlace a Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../styles.css">
+    <link rel="stylesheet" href="centinela-styles.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <div id="nav-placeholder"></div>
+
+    <!-- Botones de navegación del libro (verticales) -->
+    <div id="nav-buttons-placeholder"></div>
+
+    <!-- Contenido principal -->
+    <div id="page-container-placeholder">
+        <!-- Sección principal -->
+        <header class="container text-center mt-5">
+            <div class="row align-items-center">
+                <div class="col-md-5 text-center">
+                    <a href="actual.html">
+                        <img src="../Imágenes/Comics/Sentinel/S460.png" alt="Portada" class="img-fluid rounded shadow-sm gallery-image" style="max-height: 500px; object-fit: cover; width: auto;">
+                    </a>
+                </div>
+                <div class="col-md-7 text-center">
+                    <img src="../LMDC-LOGO.png" alt="Logo Centinela" class="img-fluid" style="max-width: 90%; max-height: 600px;">
+                    <div class="mb-4">
+                        <h1><strong>Contexto</strong></h1>
+                        <p>Bienvenidos a <em>La Mirada del Centinela</em>, un juego de rol ambientado en un mundo muy parecido al nuestro, donde el crimen y la corrupción plagan la ciudad de Betlam. Aquí, no existen los superpoderes, pero un equipo de individuos excepcionales, conocido como el <em>Centinela</em>, se dedica a luchar contra la injusticia y proteger a los inocentes.</p>
+                        <p>Considerado uno de los personajes de cómic más icónicos de la cultura pop, el Centinela ha vivido sus aventuras en miles de cómics, presentados en diferentes colecciones. A continuación vamos a repasar las principales series de cómic ambientadas en el Universo del Centinela.</p>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Sección de galerías de comics (se genera automáticamente) -->
+        <section class="container mt-4">
+            <div id="comics-galleries-container">
+                <p class="text-center">Cargando galerías de comics...</p>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../../nav.js"></script>
+    <script src="libro.js"></script>
+    <script src="comics-data.js"></script>
+    <script src="comics-gallery.js"></script>
+</body>
+</html>
