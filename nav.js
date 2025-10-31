@@ -104,6 +104,7 @@ function generateNavHTML() {
                             <li><a class="dropdown-item ${activeClass('centinela-comics')}" href="${relativePath}${centinelaPath}comicssentinel.html">Cómics</a></li>
                             <li><a class="dropdown-item ${activeClass('centinela-arbol')}" href="${relativePath}${centinelaPath}arbolbetlam.html">Arbol Genealógico</a></li>
                             <li><a class="dropdown-item ${activeClass('centinela-blog')}" href="${relativePath}${centinelaPath}blog.html">Blog</a></li>
+                            <li><a class="dropdown-item ${activeClass('centinela-operaciones')}" href="${relativePath}${centinelaPath}operaciones.html">Operaciones</a></li>
                         </ul>
                     </li>
                     <li class="nav-item"><a class="nav-link ${activeClass('proyectos')}" href="${relativePath}proyectos.html">Proyectos</a></li>
