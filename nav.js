@@ -55,6 +55,8 @@ function getActivePage() {
         return 'centinela-arbol';
     } else if (filename === 'blog.html') {
         return 'centinela-blog';
+    } else if (filename === 'operaciones.html') {
+        return 'centinela-operaciones';
     }
     
     return '';
