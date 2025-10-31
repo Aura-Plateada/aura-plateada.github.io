@@ -10,7 +10,6 @@ const mainCollectionsOrder = [
     'Nova Stories Reports',
     'Doble Justicia',
     'Dulce, Dulce Venganza',
-    'El Centinela vs el Profesor Hypnos'
 ];
 
 // Configuración de información adicional de las colecciones
@@ -86,7 +85,7 @@ const sueltosCollections = [
 function generateComicGallery(collection) {
     const info = collectionsInfo[collection.name] || {};
     
-    let html = `<h1 class="mb-4">`;
+    let html = `<h2 class="mb-4">`;
     
     if (info.link) {
         html += `<a href="${info.link}" target="_blank">${collection.name}</a>`;
@@ -94,8 +93,8 @@ function generateComicGallery(collection) {
         html += collection.name;
     }
     
-    html += `</h1>`;
-    
+    html += `</h2>`;
+
     if (info.info) {
         html += `<p>${info.info}</p>`;
     }

@@ -2,13 +2,13 @@
 
 // Configuración de las páginas del libro
 const paginasLibro = {
-    'creditos.html': { letra: 'A', titulo: '', fondo: 'A.jpg' }, // Título vacío porque está en la imagen de fondo
-    'prologo.html': { letra: 'B', titulo: '', fondo: 'B.jpg' },
-    'contenidos.html': { letra: 'C', titulo: '', fondo: 'C1.jpg' },
+    'creditos.html': { letra: 'A', titulo: 'CRÉDITOS', fondo: 'A.jpg' }, // Título vacío porque está en la imagen de fondo
+    'prologo.html': { letra: 'B', titulo: 'PRÓLOGO', fondo: 'B.jpg' },
+    'contenidos.html': { letra: 'C', titulo: 'CONTENIDOS', fondo: 'C1.jpg' },
     'apendice.html': { letra: 'D', titulo: '', fondo: 'portadaD.jpg' },
     // Subpáginas del apéndice
-    'comicssentinel.html': { letra: 'D', titulo: '', fondo: 'D_Comics.jpg', esSubpagina: true },
-    'glosario.html': { letra: 'D', titulo: '', fondo: 'D_Glosario.jpg', esSubpagina: true },
+    'comicssentinel.html': { letra: 'D', titulo: 'LOS CÓMICS DEL CENTINELA', fondo: 'D_Comics.jpg', esSubpagina: true },
+    'glosario.html': { letra: 'D', titulo: 'GLOSARIO DE PERSONAJES', fondo: 'D_Glosario.jpg', esSubpagina: true },
     'opengamelicense.html': { letra: 'D', titulo: '', fondo: 'D_OpenGameLicense.jpg', esSubpagina: true }
 };
 
@@ -42,7 +42,7 @@ function generarEstilosLibro() {
                 background-image: url('../Imágenes/fondos/${config.fondo}');
                 background-size: 100% auto;
                 background-position: top center;
-                background-repeat: no-repeat;
+                background-repeat: yes-repeat;
                 position: relative;
                 min-height: fit-content;
                 margin-bottom: 0;
@@ -51,11 +51,20 @@ function generarEstilosLibro() {
             .content-wrapper {
                 padding: 2cm 5% 2cm 5%;
                 padding-top: 4.5cm;
-                padding-bottom: 50%;
+                padding-bottom: auto;
                 min-height: auto;
             }
             
             h1 {
+                font-size: 80pt;
+                line-height: 100%;
+                color: #0e5430;
+                font-weight: bold;
+                text-align: center;
+                margin: 0;
+            }
+
+            h2 {
                 font-size: 40pt;
                 line-height: 200%;
                 color: #0e5430;

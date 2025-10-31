@@ -124,3 +124,75 @@ header img {
 .btn-nav-libro:active {
     transform: scale(0.98);
 }
+
+/* Estilos para botones circulares de navegación del libro 2 */
+.btn-nav-libro2 {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #d2d6df;
+    color: #b3b6bd;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 3px solid #d4d4d4;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.btn-nav-libro2 span {
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: "Eurostile", "Arial Narrow", Arial, sans-serif;
+}
+
+.btn-nav-libro2:hover,
+.btn-nav-libro2:focus,
+.btn-nav-libro2.active {
+    background-color: #5f708e;
+    border-color: #262626;
+    color: white;
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+}
+
+.btn-nav-libro2:active {
+    transform: scale(0.98);
+}
+
+/* Estilos para botones circulares de navegación del libro 1 */
+.btn-nav-libro1 {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e9d5d4;
+    color: #c2b2b2;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    border: 3px solid #d4d4d4;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.btn-nav-libro1 span {
+    font-size: 2.5rem;
+    font-weight: bold;
+    font-family: "Eurostile", "Arial Narrow", Arial, sans-serif;
+}
+
+.btn-nav-libro1:hover,
+.btn-nav-libro1:focus,
+.btn-nav-libro1.active {
+    background-color: #ad6c68;
+    border-color: #2c2422;
+    color: #2c2422;
+    transform: scale(1.05);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+}
+
+.btn-nav-libro1:active {
+    transform: scale(0.98);
+}

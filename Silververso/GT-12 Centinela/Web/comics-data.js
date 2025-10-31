@@ -10,6 +10,20 @@ const comicsData = {
       ]
     },
     {
+      "name": "Recopilatorios",
+      "images": [
+        "ManualBasico.jpg",
+        "TS2-T.jpg",
+        "mejores.jpg",
+        "DDV.jpg",
+        "DJ.jpg",
+        "Post2008.jpg",
+        "BC.jpg",
+        "HPC.jpg",
+        "SNW.jpg"
+      ]
+    },
+    {
       "name": "Betlam Central",
       "images": [
         "BC28.png",
@@ -141,7 +155,9 @@ const comicsData = {
       "images": [
         "LasMejoresHistoriasdelCENTINELAJamasContadas-1.jpg",
         "MM.png",
-        "Portada1.jpg"
+        "Portada1.jpg",
+        "NR.jpg",
+        "WP.jpg"
       ]
     },
     {
@@ -193,7 +209,6 @@ const comicsData = {
         "S771.jpg",
         "S772.jpg",
         "S773.jpg",
-        "S799.png",
         "SA9.png",
         "SA29.png",
         "SS16.jpg"
@@ -212,8 +227,20 @@ const comicsData = {
       ]
     },
     {
+      "name": "Otros Mundos",
+      "images": [
+        "BHC.jpg",
+        "CA100.jpg",
+        "LMDB.jpg",
+        "SRebirth.jpg",
+        "SRider.jpg",
+      ]
+    },
+    {
       "name": "Tales of the Sentinel",
       "images": [
+        "TS-LS.jpg",
+        "TS2-T.jpg",
         "TS2-1.png",
         "TS2-2.png",
         "TS2-3.png",
@@ -226,7 +253,7 @@ const comicsData = {
         "TS2-10.png",
         "TS2-11.png",
         "TS2-12.png",
-        "TS2-T.jpg"
+        
       ]
     },
     {
@@ -248,6 +275,7 @@ const comicsData = {
         "TW11.png",
         "TW12.png",
         "TW37.png",
+        "TW89.jpg",
         "TW95.jpg",
         "TW96.jpg",
         "TW97.jpg",
