@@ -1,5 +1,5 @@
 // comics-data.js - Datos generados automáticamente
-// Generado el: mar 28 oct 2025 22:12:33 WET
+// Generado el: lun 15 dic 2025 07:58:29 WET
 
 const comicsData = {
   "collections": [
@@ -7,20 +7,6 @@ const comicsData = {
       "name": "Batman-Sentinel Improbable foes",
       "images": [
 
-      ]
-    },
-    {
-      "name": "Recopilatorios",
-      "images": [
-        "ManualBasico.jpg",
-        "TS2-T.jpg",
-        "mejores.jpg",
-        "DDV.jpg",
-        "DJ.jpg",
-        "Post2008.jpg",
-        "BC.jpg",
-        "HPC.jpg",
-        "SNW.jpg"
       ]
     },
     {
@@ -102,6 +88,7 @@ const comicsData = {
         "IC8.png",
         "IC14.png",
         "IC27.png",
+        "IC33.png",
         "IC37.png",
         "IC53.png",
         "IC62.png",
@@ -126,6 +113,12 @@ const comicsData = {
       ]
     },
     {
+      "name": "Maximun Mayhem",
+      "images": [
+
+      ]
+    },
+    {
       "name": "NO NSR EDICIONES",
       "images": [
         "Hell_Haven_Comic_Cover_1.png"
@@ -136,7 +129,9 @@ const comicsData = {
       "images": [
         "NSR1.jpg",
         "NSR397.png",
+        "NSR417.jpg",
         "NSR514.png",
+        "NSR516.jpg",
         "NSR567.png",
         "NSR639.png",
         "NSR713.png",
@@ -155,9 +150,35 @@ const comicsData = {
       "images": [
         "LasMejoresHistoriasdelCENTINELAJamasContadas-1.jpg",
         "MM.png",
-        "Portada1.jpg",
         "NR.jpg",
+        "Portada1.jpg",
+        "TS-LS.jpg",
         "WP.jpg"
+      ]
+    },
+    {
+      "name": "Otros Mundos",
+      "images": [
+        "BHC.jpg",
+        "CA100.jpg",
+        "LMDB.jpg",
+        "SRebirth.jpg",
+        "SRider.jpg"
+      ]
+    },
+    {
+      "name": "Recopilatorios",
+      "images": [
+        "BC.jpg",
+        "DDV.jpg",
+        "DJ.jpg",
+        "HPC.jpg",
+        "LasMejoresHistoriasdelCENTINELAJamasContadas-1.jpg",
+        "ManualBasico.jpg",
+        "Post2008.jpg",
+        "SNW.jpg",
+        "TS2-T.jpg",
+        "mejores.jpg"
       ]
     },
     {
@@ -227,20 +248,8 @@ const comicsData = {
       ]
     },
     {
-      "name": "Otros Mundos",
-      "images": [
-        "BHC.jpg",
-        "CA100.jpg",
-        "LMDB.jpg",
-        "SRebirth.jpg",
-        "SRider.jpg",
-      ]
-    },
-    {
       "name": "Tales of the Sentinel",
       "images": [
-        "TS-LS.jpg",
-        "TS2-T.jpg",
         "TS2-1.png",
         "TS2-2.png",
         "TS2-3.png",
@@ -253,7 +262,8 @@ const comicsData = {
         "TS2-10.png",
         "TS2-11.png",
         "TS2-12.png",
-        
+        "TS2-T.jpg",
+        "TS-LS.jpg"
       ]
     },
     {
@@ -271,10 +281,22 @@ const comicsData = {
     {
       "name": "The Time of Watchers",
       "images": [
-        "TW1.png",
-        "TW11.png",
-        "TW12.png",
+        "TW1.jpg",
+        "TW2.jpg",
+        "TW3.jpg",
+        "TW11.jpg",
+        "TW12.jpg",
+        "TW13.jpg",
+        "TW14.png",
+        "TW15.jpg",
+        "TW18.jpg",
+        "TW20.jpg",
+        "TW24.jpg",
+        "TW25.jpg",
+        "TW26.jpg",
+        "TW34.jpg",
         "TW37.png",
+        "TW48.jpg",
         "TW89.jpg",
         "TW95.jpg",
         "TW96.jpg",

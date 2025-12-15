@@ -3,6 +3,29 @@
  * Aura Plateada - Navegación Universal
  */
 
+// Instalar Google Analytics (GA4) de forma centralizada en todo el sitio
+function ensureGA(gaId) {
+    if (!gaId) return;
+    if (window.__gaInstalled) return;
+
+    const existingScript = document.querySelector('script[src*="googletagmanager.com/gtag/js"]');
+    if (!existingScript) {
+        const s = document.createElement('script');
+        s.async = true;
+        s.src = `https://www.googletagmanager.com/gtag/js?id=${gaId}`;
+        document.head.appendChild(s);
+    }
+
+    window.dataLayer = window.dataLayer || [];
+    window.gtag = window.gtag || function(){ dataLayer.push(arguments); };
+    if (!window.__gaConfigured) {
+        gtag('js', new Date());
+        gtag('config', gaId);
+        window.__gaConfigured = true;
+    }
+    window.__gaInstalled = true;
+}
+
 // Función para determinar la profundidad de la página actual
 function getDepth() {
     const path = window.location.pathname;
@@ -134,6 +157,9 @@ function generateFooterHTML() {
 
 // Cargar la navegación cuando el DOM esté listo
 document.addEventListener('DOMContentLoaded', function() {
+    // Asegurar Google Analytics (ID provisto por el usuario)
+    ensureGA('G-V5LG86KWHR');
+
     // Buscar el elemento donde insertar la navegación
     const navPlaceholder = document.getElementById('nav-placeholder');
     if (navPlaceholder) {
