@@ -3,6 +3,14 @@
 // Mapeo de recopilatorios con sus portadas y links
 // Las operaciones se buscarán automáticamente en comicsData por los nombres de imagen
 const recopilatoriosInfo = {
+    'Sector Ágata Carmín': {
+        portada: 'TW12.jpg',
+        link: 'actual.html',
+        // Cada operación puede ser:
+        // - String: 'TW12.jpg' (enlace por defecto a la imagen)
+        // - Objeto: { image: 'TW12.jpg', link: 'url' } (enlace personalizado)
+        operaciones: [{ image: 'TW12.jpg', link: 'personajes.html' }, { image: 'TW18.jpg', link: '../Imágenes/partidas/JOYERIA-FUTURO.jpg' }, { image: 'TW34.jpg', link: 'actual.html' }]
+    },
     'Manual Basico': {
         portada: 'ManualBasico.jpg',
         link: '../ManualBásico.pdf',
@@ -67,7 +75,8 @@ const recopilatoriosInfo = {
         portada: 'HPC.jpg',
         link: '../ColecciónOperacionesVariasEtapas.pdf',
         operaciones: ['S226.jpg', 'TW95.jpg', 'TW96.jpg', 'TW97.jpg', 'TW98.jpg', 'S446.jpg', 'S447.jpg', 'S448.jpg', 'S449.jpg', 'S670.jpg']
-    }
+    },
+    
 };
 
 // Mapeo de partidas sueltas (sin galería de operaciones propia, todas comparten la sección "Operaciones Sueltas")
@@ -134,6 +143,7 @@ const ordenCronologico = [
     'S226.jpg',
     'S302.jpg',
     "S321.jpg",
+    "TW12.jpg", "TW18.jpg", "TW34.jpg",
     'TW89.jpg',
     'TW95.jpg', 'TW96.jpg', 'TW97.jpg', 'TW98.jpg',
     "IC477.png",
@@ -247,12 +257,15 @@ function generateRecopilatorioSection(nombreRecopilatorio, info, allCollections)
             <div class="row g-2">`;
     
     // Generar las portadas de las operaciones
-    info.operaciones.forEach(imageName => {
+    // Soporta elementos como string (nombre de imagen) o objeto { image: 'archivo.jpg', link: 'url' }
+    info.operaciones.forEach(op => {
+        const imageName = typeof op === 'string' ? op : op.image;
         const imagePath = findImagePath(imageName, allCollections);
         const displayName = imageName.replace(/\.(jpg|jpeg|png|gif|webp)$/i, '');
+        const href = typeof op === 'object' && op.link ? op.link : imagePath;
         html += `
                 <div class="col-2">
-                    <a href="${imagePath}" target="_blank">
+                    <a href="${href}" target="_blank">
                         <img src="${imagePath}" class="img-fluid rounded shadow-sm gallery-image" alt="${displayName}" style="cursor: pointer; height: 100%; width: 100%;">
                     </a>
                 </div>`;

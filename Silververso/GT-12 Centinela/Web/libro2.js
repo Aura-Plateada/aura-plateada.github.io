@@ -1,14 +1,34 @@
 // libro2.js - Sistema de navegación y estilos para las páginas del libro 2 (1, 2, 3, 4, 5)
 
-// Configuración de las páginas del libro
-const paginasLibro = {
-    'organización.html': { letra: '1', titulo: 'ORGANIZACIÓN', fondo: '01_1.jpg' },
-    'archivos.html': { letra: '2', titulo: 'ARCHIVOS', fondo: '02_1.jpg' },
-    'escenario.html': { letra: '3', titulo: 'ESCENARIO', fondo: '03_1.jpg' },
-    'antagonistas.html': { letra: '4', titulo: 'ANTAGONISTAS', fondo: '04_1.jpg' },
-    'operaciones.html': { letra: '5', titulo: 'OPERACIONES', fondo: '05_1.jpg' }
-
+// Configuración de las secciones del libro (páginas principales)
+const seccionesLibro = {
+    organizacion: { archivo: 'organización.html', letra: '1', titulo: 'ORGANIZACIÓN', fondo: '01_1.jpg' },
+    archivos: { archivo: 'archivos.html', letra: '2', titulo: 'ARCHIVOS', fondo: '02_1.jpg' },
+    escenario: { archivo: 'escenario.html', letra: '3', titulo: 'ESCENARIO', fondo: '03_1.jpg' },
+    antagonistas: { archivo: 'antagonistas.html', letra: '4', titulo: 'ANTAGONISTAS', fondo: '04_1.jpg' },
+    operaciones: { archivo: 'operaciones.html', letra: '5', titulo: 'OPERACIONES', fondo: '05_1.jpg' },
 };
+
+// Mapa inverso: archivo principal -> clave de sección
+const archivoASeccion = Object.fromEntries(Object.entries(seccionesLibro).map(([k, v]) => [v.archivo, k]));
+
+// Obtener parámetro 'seccion' desde el src del script o la URL
+function obtenerSeccionParametro() {
+    // 1) Revisar el script que carga este archivo
+    const scripts = document.getElementsByTagName('script');
+    for (const s of scripts) {
+        if (s.src && s.src.includes('libro2.js')) {
+            try {
+                const url = new URL(s.src, window.location.origin);
+                const sec = url.searchParams.get('seccion');
+                if (sec) return sec.toLowerCase();
+            } catch {}
+        }
+    }
+    // 2) Revisar la query de la página
+    const sec = new URLSearchParams(window.location.search).get('seccion');
+    return sec ? sec.toLowerCase() : null;
+}
 
 // Obtener la página actual
 function getPaginaActual() {
@@ -17,12 +37,34 @@ function getPaginaActual() {
     return filename;
 }
 
+// Resolver la sección activa: si la página es principal, usarla; si es subpágina, usar parámetro 'seccion'
+function resolverSeccionActiva() {
+    const pagina = getPaginaActual();
+    // Si es una de las páginas principales
+    if (archivoASeccion[pagina]) {
+        return archivoASeccion[pagina];
+    }
+    // Si es subpágina, intentar obtener por parámetro
+    const secParam = obtenerSeccionParametro();
+    if (secParam && seccionesLibro[secParam]) {
+        return secParam;
+    }
+    // Fallback: operaciones si no se especifica
+    return 'operaciones';
+}
+
+// Determina si la página actual es una página principal del libro
+function esPaginaPrincipal() {
+    const pagina = getPaginaActual();
+    return Boolean(archivoASeccion[pagina]);
+}
+
 // Generar los estilos CSS para la página del libro
 function generarEstilosLibro() {
-    const paginaActual = getPaginaActual();
-    const config = paginasLibro[paginaActual];
-    
+    const seccion = resolverSeccionActiva();
+    const config = seccionesLibro[seccion];
     if (!config) return '';
+    const paddingTop = esPaginaPrincipal() ? '4.5cm' : '2cm';
     
     return `
         <style>
@@ -48,7 +90,7 @@ function generarEstilosLibro() {
             
             .content-wrapper {
                 padding: 2cm 5% 2cm 5%;
-                padding-top: 4.5cm;
+                padding-top: ${paddingTop};
                 padding-bottom: auto;
                 min-height: auto;
             }
@@ -69,6 +111,30 @@ function generarEstilosLibro() {
                 font-weight: bold;
                 text-align: center;
                 margin: 0 5% 0 5%;
+            }
+            
+            h2a {
+                font-size: 45pt;
+                line-height: 100%;
+                color: #223158;
+                font-weight: bold;
+                text-align: left;
+                margin: 0;
+            }
+            h3 {
+                font-size: 30pt;
+                color: #223158;
+                font-weight: bold;
+                text-align: left;
+                margin: 0;
+            }
+            subpag {
+                font-size: 40pt;
+                line-height: 150%;
+                color: #223158;
+                font-weight: bold;
+                text-align: center;
+                margin: 0 0 0 0;
             }
             
             .content-section {
@@ -135,19 +201,13 @@ function generarEstilosLibro() {
 
 // Generar los botones de navegación vertical
 function generarBotonesNavegacion() {
-    const paginaActual = getPaginaActual();
-    const config = paginasLibro[paginaActual];
-    
+    const seccionActiva = resolverSeccionActiva();
     let html = '<div class="nav-buttons-vertical">';
-    
-    for (const [archivo, configItem] of Object.entries(paginasLibro)) {
-        // Solo mostrar páginas principales (no subpáginas)
-        if (configItem.esSubpagina) continue;
-        
-        const isActive = archivo === paginaActual ? 'active' : '';
+    for (const [clave, conf] of Object.entries(seccionesLibro)) {
+        const isActive = clave === seccionActiva ? 'active' : '';
         html += `
-        <a href="${archivo}" class="btn-nav-libro-small ${isActive}">
-            <span>${configItem.letra}</span>
+        <a href="${conf.archivo}" class="btn-nav-libro-small ${isActive}">
+            <span>${conf.letra}</span>
         </a>`;
     }
     
@@ -157,14 +217,11 @@ function generarBotonesNavegacion() {
 
 // Generar el contenedor de la página
 function generarContenedorPagina(contenidoHTML) {
-    const paginaActual = getPaginaActual();
-    const config = paginasLibro[paginaActual];
-    
+    const seccion = resolverSeccionActiva();
+    const config = seccionesLibro[seccion];
     if (!config) return contenidoHTML;
-    
-    // Si no hay título, solo devolver el contenido sin el h1
-    const tituloHTML = config.titulo ? `<h1>${config.titulo}</h1>` : '';
-    
+    // Para subpáginas no mostrar el título principal (solo en páginas raíz)
+    const tituloHTML = esPaginaPrincipal() && config.titulo ? `<h1>${config.titulo}</h1>` : '';
     return `
         <div class="page-container">
             <div class="content-wrapper">

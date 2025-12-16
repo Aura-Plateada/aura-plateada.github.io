@@ -3,132 +3,218 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Aura Plateada</title>
+    <title>Partida Actual del Centinela - Aura Plateada</title>
     <link rel="icon" href="../../../image/favicon.png" type="image/x-icon">
     <!-- Enlace a Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../../../styles.css"> <!-- Archivo CSS personalizado -->
     <link rel="stylesheet" href="centinela-styles.css"> <!-- Estilos específicos de Centinela -->
+
 </head>
 <body>
     <!-- Barra de navegación -->
     <div id="nav-placeholder"></div>
+    <div id="nav-buttons-placeholder"></div>
+    <div id="page-container-placeholder">
+
 
     <!-- Sección principal -->
-    <header class="container text-center mt-5">
-        <div class="row align-items-center">
-            <div class="col-md-5 text-center">
-                <img src="../Imágenes/Comics/The Time of Watchers/TW12.png" alt="Portada" class="img-fluid rounded shadow-sm gallery-image" alt="" style="height: auto; object-fit: cover; width: auto;">
-            </div>
-            <div class="col-md-7 text-center">
-                <img src="../LMDC-LOGO.png" alt="Logo Centinela" class="img-fluid" style="max-width: 90%; max-height: 600px;">
-                  <div class="mb-4">
-    <div class="container py-5">
-  <div class="row">
-    <div class="col text-center">
-      <h1 class="fw-bold">Contexto</h1>
-    </div>
-  </div>
-
-  <div class="row mt-4">
-    <div class="col">
-      <p>
+  <header class="container text-center">
+    <div class="row align-items-center">
+      <div class="col-md-5 text-center">
+        <img src="../Imágenes/Comics/The Time of Watchers/TW34.jpg" alt="Portada" class="img-fluid rounded shadow-sm gallery-image" style="height: auto; object-fit: cover; width: auto;">
+      </div>
+      <div class="col-md-7 text-center">
+        <img src="../LMDC-LOGO.png" alt="Logo Centinela" class="img-fluid" style="max-width: 90%; max-height: 600px;">
+        <subpag class="fw-bold ">Contexto</subpag>
+        <p>
         Nos situamos en una ciudad del Estado de Nueva Jersey, Betlam City, en el año 1975; en un mundo muy parecido al nuestro, pero con la diferencia de que existen personas que llevan sus capacidades al límite y se disfrazan con trajes estrafalarios para combatir el crimen o provocar el caos.
         Betlam es un ciudad oscura, llena de crimen y corrupción, pero hay un héroe que vela por sus ciudadanos: El Centinela. Una figura legendaria que desde principios del siglo XX ha luchado contra las fuerzas oscuras que dominan la ciudad, impidiendo que la consumieran por completo.
-      </p>
-
-      <p>
+        </p>
+        <p>
         Pero hace un año, en 1974, tres personas corrientes deciden fabricarse un uniforme, asumir un nombre clave y salir a patrullar por las noches de Betlam. Son Polecat, Sentencia y Horus.
         Durante los meses siguientes, el fenómeno se extiende por Betlam, con justicieros como Puño Ágata, Spade o Red Roy. 
-      </p>
-
-      <p>
+        </p>
+        <p>
         Este fenomeno de vigilantes lleva consigo un mensaje a la sociedad Betlamita dandonles esperanza, a los criminales temor y al gobierno su impotencia corrupta. Pero nada es perfecto, los vigilantes tienen su propia manera de ver el crimen y ejecutar la justicia, igual que los villanos son distintos a los betlamitas comunes. 
-      </p>
+        </p>
+      </div>
     </div>
-  </div>
-</div>
+  </header>
 
-                  </div>
-            </div>
-        </div>
-    </header>
-
-        <!-- Imagen centrada -->
-        <div class="row">
-            <div class="col-md-6 container text-center my-5">
-                <div class="card">
-                    <img src="../Imágenes/TallerdePersonajesFINAL.png" class="img-fluid rounded shadow-sm" alt="la Mirada del Centinela">
-                    <div class="card-body">
-                        <h5 class="card-title">La Era de los Vigilantes</h5>
-                        <p class="card-text">Entra aquí al Taller de personajes.</p>
-                        <p class="card-text">Crea tu propio vigilante de Betlam</p>
-                        <a href="https://e.pcloud.link/publink/show?code=kZpytOZTgFx7PY7mPHciTS3kgV1Yhv3IRXy#/login?folder=18973050700" class="btn btn-primary">Ver más</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    <!-- Sección de blog -->
-    <section class="container mt-4">
-    <div class="container mt-5">
-  <h1 class="mb-4">De Noxa et Virtute</h1>
-  <div class="mb-4">
-    <h5><strong>Cómic</strong>: <em>The Time of Watchers #12 (feb. de 1975)</em></h5>
-    <div class="container py-5">
-  <div class="row">
-    <div class="col">
-      <h3 class="fw-bold mb-4">Sinopsis</h3>
+  <!-- Vigilantes de Betlam City GALERÍA DE PERSONAJES-->
+  <!-- Galería de Personajes (por categorías) -->
+  <section class="container mt-4">
+    <div id="personajes-galeria"></div>
+  </section>
+  
+  <!-- Sección de Comics Actual -->
+  <section class="container mt-4">
+    <h2a>KRAMPUS ACECHA</h2a>
+    <h6><strong>Cómic</strong>: <em>The Time of Watchers #34 (dic. de 1976)</em></h6>
+    <div class="row col">
+      <h4 class="fw-bold">Sinopsis</h4>
       <p>
-        El justiciero Puño Ágata recibe una invitación de la Capitana Noxa, la genio criminal y filosofa malvada. Noxa ha preparado un complejo dilema mortal en la Mina de Silverdale. Puño Ágata debe decidir a quién salvará y quién morirá.
-        Ustedes serán civiles atrapados en este juego moral y filosófico. A partir de este suceso, se convertirán en los nuevos vigilantes de Betlam City.
-        En este taller crearemos a vuestros justicieros (y su némesis) para la nueva campaña del Sector Ágata Carmín (SAC), el equipo fundado por Puño Ágata.
+        Esta Navidad los vigilantes de Betlam tengan un gran regalo, 
+        la invitación a unirse a un equipo de justicieros de Santa Ágata y el trío Carmín.
+        ¿Qué podría fastidiar estas navidades? ¡El Crimen! 
+      La villanía y corrupción no descansa ni siquiera en navidad, al igual que los justicieros de esta ciudad.
       </p>
-
+      <p>
+      El Trío Ágata por Navidad, entrega las invitaciones a los vigilantes para unirse a su nuevo equipo de Justicieros. 
+        Tendrá que entregar las cartas y reunirlos en un lugar. Su primera misión será el caso de unos extraños asesinatos relacionados con Krampus.
+      </p>
       <p class="fst-italic">
-        ¿Podrá Puño Ágata salvar a todos, o alguien morirá?
-        ¿La Capitana Noxa conseguirá su objetivo de corromper al héroe?
-        ¿De dónde ha salido esta villana tan poderosa?
+        ¿Qué mal acechará a nuestros queridos vigilantes?
       </p>
     </div>
-  </div>
-</div>
-  </div>
 
-  <hr>
-
-  <div class="row mb-4">
-    <div class="col-md-6">
-      <h5><strong>Época:</strong></h5>
-      <p>La Era de los Vigilantes</p>
+    <div class="row mb-4">
+      <div class="col-md-6">
+        <h5><strong>Época:</strong></h5>
+        <p>La Era de los Vigilantes</p>
+      </div>
+      <div class="col-md-5">
+        <h5><strong>Protagonistas:</strong></h5>
+        <p>Puño Ágata, Spade, Jetattore, vigilantes de Betlam</p>
+      </div>
     </div>
-    <div class="col-md-6">
-      <h5><strong>Protagonistas:</strong></h5>
-      <p>Puño Ágata, Spade, Web-Ghost</p>
+    <div class="row mb-4">
+      <div class="col-md-6">
+        <h5><strong>Antagonistas:</strong></h5>
+        <p>Capitana Noxa, Robots Perdición, Dañadores, Híbridos.</p>
+      </div>
+      <div class="col-md-5">
+        <h5><strong>Escenarios:</strong></h5>
+        <p>Base Carmín, Industrial Park, Fábrica abandonada, Túneles de Betlam.</p>
+      </div>
     </div>
+
+      <!-- Imagen de la partida -->
+    <div class="container text-center my-5">
+      <img src="../Imágenes/partidas/KRAMPUS-ACECHA.jpg" alt="Resumen" class="img-fluid rounded shadow-sm" style="max-width: 100%; max-height: auto;">
+    </div>
+  </section>
+
+  <!-- Sección de otro comic -->
+  <section class="container mt-4">
+    <h2a>ROBO EN LA JOYERÍA DEL FUTURO</h2a>
+    <h6><strong>Cómic</strong>: <em>The Time of Watchers #18 (sept. de 1975)</em></h6>
+    <div class="row col">
+      <h4 class="fw-bold">Sinopsis</h4>
+      <p>
+        Han habido robos en las empresas localizadas en Finger Park District, todas con el mismo modus operandi, la próxima podría ser Gems Tech, la industria de joyas de Puño Ágata. Nuestra familia contra el crimen, Puño Ágata, Spade y Jettatore tratarán de investigar los hechos y encontrar al ladrón, antes de que suceda otra vez. Tendrán que frustar sus planes y detenerlo. 
+      </p>
+      <p class="fst-italic">
+        ¿Podrán nuestro trío Carmín seguir las pistas?¿Quién será este extraño ladrón?¿Habrá algo más detrás? Descubrelo en este nuevo número de La Hora de los Vigilantes!
+      </p>
+    </div>
+
+    <div class="row mb-4">
+      <div class="col-md-6">
+        <h5><strong>Época:</strong></h5>
+        <p>La Era de los Vigilantes</p>
+      </div>
+      <div class="col-md-5">
+        <h5><strong>Protagonistas:</strong></h5>
+        <p>Puño Ágata, Spade, Jetattore, Horus y La Detective</p>
+      </div>
+    </div>
+    <div class="row mb-4">
+      <div class="col-md-6">
+        <h5><strong>Antagonistas:</strong></h5>
+        <p>Diamond Sharp, Nudillos, Blastmaster, petardos.</p>
+      </div>
+      <div class="col-md-5">
+        <h5><strong>Escenarios:</strong></h5>
+        <p>Gems Tech, Finger Park District, Túneles de Betlam, Hieroglyphics Inc., Live Corp..</p>
+      </div>
+    </div>
+
+      <!-- Imagen de la partida -->
+    <div class="container text-center my-5">
+      <img src="../Imágenes/partidas/JOYERIA-FUTURO.jpg" alt="Resumen" class="img-fluid rounded shadow-sm" style="max-width: 100%; max-height: auto;">
+    </div>
+  </section>
+
+    <!-- Sección de otro comic -->
+  <section class="container mt-4">
+    <h2a>DE NOXA ET VIRTUTE</h2a>
+    <h4><em>Sobre el Daño y la virtud</em></h4>
+    <h6><strong>Cómic</strong>: <em>The Time of Watchers #12 (feb. de 1975)</em></h6>
+    <div class="row col">
+      <h4 class="fw-bold">Sinopsis</h4>
+      <p>
+        El justiciero Puño Ágata recibe una invitación de la Capitana Noxa, la genio criminal y filosofa malvada. Noxa ha preparado un complejo dilema mortal en la Mina de Silverdale. Puño Ágata debe decidir a quién salvará y quién morirá. Ustedes serán civiles atrapados en este juego moral y filosófico. A partir de este suceso, se convertirán en los nuevos vigilantes de Betlam City. En este taller crearemos a vuestros justicieros (y su némesis) para la nueva campaña del Sector Ágata Carmín (SAC), el equipo fundado por Puño Ágata. 
+      </p>
+      <p class="fst-italic">
+         ¿Podrá Puño Ágata salvar a todos, o alguien morirá? ¿La Capitana Noxa conseguirá su objetivo de corromper al héroe? ¿De dónde ha salido esta villana tan poderosa? 
+      </p>
+    </div>
+
+    <div class="row mb-4">
+      <div class="col-md-6">
+        <h5><strong>Época:</strong></h5>
+        <p>La Era de los Vigilantes</p>
+      </div>
+      <div class="col-md-5">
+        <h5><strong>Protagonistas:</strong></h5>
+        <p>Puño Ágata, Spade, El Centinela (nº4), los jugadores</p>
+      </div>
+    </div>
+    <div class="row mb-4">
+      <div class="col-md-6">
+        <h5><strong>Antagonistas:</strong></h5>
+        <p>Capitana Noxa, Robots Perdición, criminales de poca monta, civiles inmorales.</p>
+      </div>
+      <div class="col-md-5">
+        <h5><strong>Escenarios:</strong></h5>
+        <p>Mina de Silverdale.</p>
+      </div>
+    </div>
+
+      <!-- Imagen de la partida -->
+    <div class="row mb-4">
+      <div class="col-md-6">
+        <img src="../Imágenes/Comics/The Time of Watchers/TW12.jpg" style="max-width: 100%; max-height: 600px;">
+      </div>
+      <!-- Taller-->
+      <div class="col-md-5">
+        <div class="card">
+          <img src="../Imágenes/TallerdePersonajesFINAL.png">
+          <div class="card-body">
+            <h5 class="card-title">La Era de los Vigilantes</h5>
+            <p class="card-text">Entra aquí al Taller de personajes.</p>
+            <p class="card-text">Crea tu propio vigilante de Betlam</p>
+            <a href="personajes.html" class="btn btn-primary">Ver más</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   </div>
-
-  <div class="row mb-4">
-    <div class="col-md-8">
-      <h5><strong>Antagonistas:</strong></h5>
-       <ul>
-        <li>Capitana Noxa</li>
-      </ul>
-    </div>
-    <div class="col-md-4">
-      <h5><strong>Escenarios:</strong></h5>
-      <p>Mina de Silverdale</p>
-    </div>
-  </div>
-
-</div>
-</section>
-
-    <!-- Footer -->
-    <div id="footer-placeholder"></div>
-
-    <!-- Scripts de Bootstrap -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../../../nav.js"></script>
 </body>
+<!-- Footer -->
+<div id="footer-placeholder"></div>
+
+<!-- Scripts de Bootstrap -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Galería de personajes -->
+<script src="personajes-data.js"></script>
+<script src="personajes-gallery-v2.js" data-container="personajes-galeria"></script>
+<script>
+  // Renderizar la categoría inicial (puedes cambiar 'vigilantes' por 'villanos', 'centinela', etc.)
+  document.addEventListener('DOMContentLoaded', function () {
+    if (typeof renderPersonajesGallery === 'function') {
+      renderPersonajesGallery('personajes-galeria', ['vigilantes']);
+    }
+  });
+  // Alternativamente, puedes usar el auto-init con ?categorias=vigilantes en el src del script personajes-gallery-v2.js
+  // Ejemplo: <script src="personajes-gallery-v2.js?categorias=vigilantes" data-container="personajes-galeria"></script>
+  // En ese caso, elimina la llamada manual anterior.
+  
+</script>
+<script src="../../../nav.js"></script>
+<!-- Indicar que esta subpágina pertenece a la sección 'operaciones' -->
+<script src="libro2.js?seccion=operaciones"></script>
 </html>
