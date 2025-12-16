@@ -114,6 +114,7 @@ function generarEstilosLibro() {
             }
             
             h2a {
+                font-family: "Eurostile";
                 font-size: 45pt;
                 line-height: 100%;
                 color: #223158;
@@ -129,6 +130,7 @@ function generarEstilosLibro() {
                 margin: 0;
             }
             subpag {
+                font-family: "Eurostile";
                 font-size: 40pt;
                 line-height: 150%;
                 color: #223158;
