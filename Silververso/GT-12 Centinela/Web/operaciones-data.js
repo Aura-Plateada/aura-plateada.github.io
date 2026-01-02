@@ -195,6 +195,12 @@ const comicsData = {
       ]
     },
     {
+      "name": "Sector Ágata Carmín",
+      "images": [
+        "SAC1.jpg"
+      ]
+    },
+    {
       "name": "The throne of the Sentinel",
       "images": [
 

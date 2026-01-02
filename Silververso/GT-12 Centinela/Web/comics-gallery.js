@@ -5,6 +5,7 @@ const mainCollectionsOrder = [
     'Investigation Comics',
     'Sentinel',
     'The Time of Watchers',
+    'Sector Ágata Carmín',
     'Tales of the Sentinel',
     'Betlam Central',
     'Nova Stories Reports',
@@ -39,6 +40,14 @@ hora de los vigilantes), una colección dedicada a presentar nuevos
 héroes que actúan en la ciudad de Betlam. Durante 183 números
 (más ocho anuales y cinco números especiales) la serie presenta las
 aventuras de un variado grupo de justicieros.`
+    },
+    'Sector Ágata Carmín': {
+        description: 'Listado de portadas de Sector Ágata Carmín (en colección).',
+        info: `En enero de 1977 aparece el número 1 de <em>Sector Ágata Carmín</em>
+        , una serie mensual dedicada a presentar al equipo de
+héroes que actúan en la ciudad de Betlam. Durante x números
+(más x anuales y x números especiales) la serie presenta las
+misiones de un conformado grupo de justicieros para acabar con la criminalidad de Betlam.`
     },
     'El Centinela vs el Profesor Hypnos': {
         description: 'Listado de portadas de El Centinela vs el Profesor Hypnos (en colección).',

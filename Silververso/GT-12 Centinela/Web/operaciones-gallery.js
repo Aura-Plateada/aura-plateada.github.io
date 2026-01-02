@@ -9,7 +9,7 @@ const recopilatoriosInfo = {
         // Cada operación puede ser:
         // - String: 'TW12.jpg' (enlace por defecto a la imagen)
         // - Objeto: { image: 'TW12.jpg', link: 'url' } (enlace personalizado)
-        operaciones: [{ image: 'TW12.jpg', link: 'personajes.html' }, { image: 'TW18.jpg', link: '../Imágenes/partidas/JOYERIA-FUTURO.jpg' }, { image: 'TW34.jpg', link: 'actual.html' }]
+        operaciones: [{ image: 'TW12.jpg', link: 'personajes.html' }, { image: 'TW18.jpg', link: '../Imágenes/partidas/JOYERIA-FUTURO.jpg' }, { image: 'TW34.jpg', link: 'actual.html' }, { image: 'SAC1.jpg', link: 'actual.html' } ]
     },
     'Manual Basico': {
         portada: 'ManualBasico.jpg',

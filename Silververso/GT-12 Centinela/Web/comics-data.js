@@ -318,6 +318,12 @@ const comicsData = {
         "VC4.png",
         "VC38.png"
       ]
+    },
+    {
+      "name": "Sector Ágata Carmín",
+      "images": [
+        "SAC1.jpg"
+      ]
     }
   ]
 };
