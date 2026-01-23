@@ -20,19 +20,52 @@
     <!-- Contenido principal -->
     <div id="page-container-placeholder">
         
-        <!-- Grupos de villanos -->
+        <!-- ÉPOCA 1: Ejemplo - La Era de los Vigilantes -->
         <section class="container mt-4">
+            <h2a>LA ERA DE LOS VIGILANTES (1974-1991)</h2a>
+            <p class="content-text">
+                [Aquí va tu texto de contexto explicando esta época]
+            </p>
+            
+            <h3>Jugar en la Era de los Vigilantes</h3>
+            <p class="content-text">
+                [Aquí va tu texto explicativo sobre cómo jugar en esta época]
+            </p>
             
             <!-- Galería de personajes para esta época -->
-            <div id="galeria-evilcorp"></div>
-            <p class="content-text">
-                [Contexto del grupo de villanos]
-            </p>
+            <div id="galeria-epoca-vigilantes"></div>
         </section>
 
-        <!-- Galerías -->
+        <!-- ÉPOCA 2: Ejemplo - La Primera Formación -->
         <section class="container mt-4">
-          <!-- <div id="galeria-epocas"></div>-->
+            <h2a>LA PRIMERA FORMACIÓN</h2a>
+            <p class="content-text">
+                [Aquí va tu texto de contexto explicando esta época]
+            </p>
+            
+            <h3>Jugar en la Primera Formación</h3>
+            <p class="content-text">
+                [Aquí va tu texto explicativo sobre cómo jugar en esta época]
+            </p>
+            
+            <!-- Galería de personajes para esta época -->
+            <div id="galeria-epoca-formacion"></div>
+        </section>
+
+        <!-- ÉPOCA 3: Ejemplo - Otra época -->
+        <section class="container mt-4">
+            <h2a>OTRA ÉPOCA</h2a>
+            <p class="content-text">
+                [Aquí va tu texto de contexto explicando esta época]
+            </p>
+            
+            <h3>Jugar en [Nombre de la época]</h3>
+            <p class="content-text">
+                [Aquí va tu texto explicativo sobre cómo jugar en esta época]
+            </p>
+            
+            <!-- Galería de personajes para esta época -->
+            <div id="galeria-epoca-otra"></div>
         </section>
 
     </div>
@@ -52,10 +85,10 @@
             if (typeof renderPersonajesGallery === 'function') {
                 // Renderizar galería para Era de los Vigilantes
                 // Puedes usar categorías como: 'vigilantes', 'villanos', 'centinela', etc.
-                renderPersonajesGallery('galeria-evilcorp', ['evilcorp', 'argonautasnegros']);
+                renderPersonajesGallery('galeria-epoca-vigilantes', ['vigilantes', 'sac']);
                 
                 // Renderizar galería para La Primera Formación
-                renderPersonajesGallery('galeria-epocas', ['centinela', 'aliados']);
+                renderPersonajesGallery('galeria-epoca-formacion', ['centinela', 'aliados']);
                 
                 // Renderizar galería para otra época
                 // Ajusta las categorías según necesites

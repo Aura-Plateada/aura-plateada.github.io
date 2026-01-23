@@ -14,6 +14,7 @@
   // Marcador visual (imagen existente en el repo) hasta que completes con retratos reales
   const marcador = '../Imágenes/TallerdePersonajesFINAL.png';
     const epocas = "../Imágenes/Personajes/EPOCAS/";
+    const C = epocas+"CV/";
     const V = epocas+"5-LA ERA DE LOS VIGILANTES/";
     const PF = epocas+"4-LA PRIMERA FORMACIÓN/";
     const D = "Deuteragonistas/";
@@ -56,12 +57,44 @@
         { name: 'RedRoy', image: V+S+"RedRoy.png", link: 'https://e.pcloud.link/publink/show?code=kZSzFNZjt1IqWKOCeHxvSjw7OSoQLH3AFRy' },
         
       ],
-      villanos: [
-        { name: 'Capitana Noxa', image: V+D+"PuñoÁgata.png", link: 'antagonistas.html#capitana-noxa' }
+      evilcorp: [
+        { name: 'Capitana Noxa', image: V+A+"CapitanaNoxa.png", link: '' },
+        { name: 'Géminis', image: PF+A+"Géminis.png", link: '' },
+        { name: 'Equidna', image: V+S+"equidna.png", link: '' },
+        { name: 'Litigio', image: V+A+".png", link: '' },
+        { name: 'Alacrán', image: V+A+".png", link: '' },
       ],
-      centinela: [
-        { name: 'El Centinela', image: V+D+"PuñoÁgata.png", link: 'centinela.html' }
-      ]
+      argonautasnegros: [
+        { name: 'Blastmaster', image: PF+A+"Blastmaster.png", link: '' },
+        { name: 'KillerCrazy', image: PF+A+"KillerCrazy.jpg", link: '' },
+        { name: 'Diamond Sharp', image: V+A+"DiamondSharp.png", link: '' },
+        { name: 'Nudillos', image: V+A+"Nudillos.png", link: '' },
+        { name: 'Crusher', image: V+A+"Crusher-SF.png", link: '' },
+      ],
+      sac: [
+        { name: 'Puño Ágata', image: V+D+"PuñoÁgata.png", link: 'https://e.pcloud.link/publink/show?code=kZSHFNZYka2nGwiNjyOBn99tnHNj7bKUN6V' },
+        { name: 'Spade', image: V+D+"Spade.png", link: 'https://e.pcloud.link/publink/show?code=kZSHFNZYka2nGwiNjyOBn99tnHNj7bKUN6V' },
+        { name: 'Jettatore', image: V+D+"Jettatore.png", link: 'https://e.pcloud.link/publink/show?code=kZSHFNZYka2nGwiNjyOBn99tnHNj7bKUN6V' },
+        { name: 'S.E.U.S.', image: V+D+"SEUS.png", link: 'https://e.pcloud.link/publink/show?code=kZSHFNZYka2nGwiNjyOBn99tnHNj7bKUN6V' },
+        { name: 'Wolverinox', image: V+D+"NatoroW.png", link: 'https://e.pcloud.link/publink/show?code=kZfHFNZ1p1BMm2d9Wm5sYA4GMYeqHyxgrfy' },
+        { name: 'Loberinox', image: V+D+"AmandaW"+".png", link: 'https://e.pcloud.link/publink/show?code=XZBzFNZN1C5HcN5IqVuVTqVKlgPr4t94l97' },
+        { name: 'Eco de la Ley', image: V+D+"ecodelaley.png", link: 'https://e.pcloud.link/publink/show?code=kZfHFNZ1p1BMm2d9Wm5sYA4GMYeqHyxgrfy' },
+        { name: 'Handyman', image: V+D+"HandyMan-Oscuro.png", link: 'https://e.pcloud.link/publink/show?code=kZSzFNZjt1IqWKOCeHxvSjw7OSoQLH3AFRy' },
+        { name: 'El Ladrillo', image: V+D+"ElLadrillo-RESIZE"+".png", link: 'https://e.pcloud.link/publink/show?code=XZ1zFNZM2VF1mNhDC752jgqFDyY8JW02MLX' },
+      ],
+      cv: [
+        { name: 'Clive Burrows', image: C+P+"CliveBurrows.png", link: '' },
+        { name: 'Stephen Lincoln', image: C+P+"StephenLincoln.png", link: '' },
+        { name: 'Mathew Williams', image: C+P+"MathewWilliams.png", link: '' },
+        { name: 'Cable', image: C+P+"Cable.png", link: '' },
+        { name: 'James Goldfield', image: C+P+"JamesGoldfield.png", link: '' },
+        { name: 'Ratsu', image: C+P+"Ratsu.png", link: '' },
+        { name: 'Leo Szilard', image: C+P+"LeoSzilard.png", link: '' },
+        { name: 'Myra Drill', image: C+P+"MyraDrill.png", link: '' },
+        { name: 'Amelia Roy ', image: C+P+"AmeliaRoy.png", link: '' },
+        { name: 'Emma Roy', image: C+P+"EmmaRoy.png", link: '' },
+        { name: 'Allan Paul', image: C+P+"AllanPaul.png", link: '' },
+      ],
     }
   };
 })();

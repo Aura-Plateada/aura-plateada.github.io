@@ -101,6 +101,7 @@ const comicsData = {
         "IC339.png",
         "IC461.png",
         "IC477.png",
+        "IC601.jpg",
         "IC628.png",
         "IC683.png",
         "IC709.png",

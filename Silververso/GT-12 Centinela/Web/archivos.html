@@ -1,22 +1,67 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Archivos - Libro 2</title>
-  <link rel="icon" href="../../../image/favicon.png" type="image/x-icon" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
-  <link rel="stylesheet" href="../../../styles.css" />
-  <link rel="stylesheet" href="centinela-styles.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Archivos - La Mirada del Centinela</title>
+    <link rel="icon" href="NSR.png" type="image/x-icon">
+    <!-- Enlace a Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../styles.css">
+    <link rel="stylesheet" href="centinela-styles.css">
 </head>
 <body>
-  <div id="nav-placeholder"></div>
-  <main class="container py-5">
-    <h1 class="mb-4 text-center">Archivos</h1>
-    <p class="content-text">Compendio de informes y expedientes (pendiente de contenido).</p>
-  </main>
-  <div id="footer-placeholder"></div>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="../../../nav.js"></script>
+    <!-- Barra de navegación -->
+    <div id="nav-placeholder"></div>
+
+    <!-- Botones de navegación del libro (verticales) -->
+    <div id="nav-buttons-placeholder"></div>
+
+    <!-- Contenido principal -->
+    <div id="page-container-placeholder">
+        
+        <!-- ÉPOCA 1: Ejemplo - La Era de los Vigilantes -->
+        <section class="container mt-4">
+            <h2a>LA ERA DE LOS VIGILANTES</h2a>
+            <!-- Galería de personajes para esta época -->
+            <div id="galeria-epoca-vigilantes"></div>
+        </section>
+        <!-- ÉPOCA 1: Ejemplo - La Era de los Vigilantes -->
+        <section class="container mt-4">
+            <h2a>EL CICLO DE LA VIOLENCIA</h2a>
+            <!-- Galería de personajes para esta época -->
+            <div id="galeria-epoca-cv"></div>
+        </section>
+
+    </div>
+    <!-- Footer -->
+    <div id="footer-placeholder"></div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../../../nav.js"></script>
+    <script src="libro2.js"></script>
+    <script src="personajes-data.js"></script>
+    <script src="personajes-gallery-v2.js"></script>
+    
+    <!-- Script para renderizar galerías por época -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            if (typeof renderPersonajesGallery === 'function') {
+                // Renderizar galería para Era de los Vigilantes
+                // Puedes usar categorías como: 'vigilantes', 'villanos', 'centinela', etc.
+                renderPersonajesGallery('galeria-epoca-vigilantes', ['vigilantes', 'sac']);
+                
+                // Renderizar galería para el Ciclo de la Violencia
+                renderPersonajesGallery('galeria-epoca-cv', ['cv']);
+                
+                // Renderizar galería para otra época
+                // Ajusta las categorías según necesites
+                renderPersonajesGallery('galeria-epoca-otra', ['personajes']);
+                
+                // Añade más llamadas según las épocas que tengas
+            }
+        });
+    </script>
 </body>
 </html>

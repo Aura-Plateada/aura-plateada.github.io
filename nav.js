@@ -70,8 +70,10 @@ function getActivePage() {
         return 'contacto';
     } else if (filename === 'centinela.html') {
         return 'centinela-main';
-    } else if (filename === 'actual.html') {
-        return 'centinela-actual';
+    } else if (filename === 'sac.html') {
+        return 'centinela-sac';
+    } else if (filename === 'cv.html') {
+        return 'centinela-cv';
     } else if (filename === 'comicssentinel.html') {
         return 'centinela-comics';
     } else if (filename === 'arbolbetlam.html') {
@@ -125,7 +127,8 @@ function generateNavHTML() {
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="Centinela">
                             <li><a class="dropdown-item ${activeClass('centinela-main')}" href="${relativePath}${centinelaPath}centinela.html">La Mirada del Centinela</a></li>
-                            <li><a class="dropdown-item ${activeClass('centinela-actual')}" href="${relativePath}${centinelaPath}actual.html">Actual</a></li>
+                            <li><a class="dropdown-item ${activeClass('centinela-sac')}" href="${relativePath}${centinelaPath}sac.html">Sector Ágata Carmín</a></li>
+                            <li><a class="dropdown-item ${activeClass('centinela-cv')}" href="${relativePath}${centinelaPath}cv.html">El Ciclo de la Violencia</a></li>
                             <li><a class="dropdown-item ${activeClass('centinela-comics')}" href="${relativePath}${centinelaPath}comicssentinel.html">Cómics</a></li>
                             <li><a class="dropdown-item ${activeClass('centinela-arbol')}" href="${relativePath}${centinelaPath}arbolbetlam.html">Arbol Genealógico</a></li>
                             <li><a class="dropdown-item ${activeClass('centinela-contenidos')}" href="${relativePath}${centinelaPath}contenidos.html">Contenidos</a></li>
