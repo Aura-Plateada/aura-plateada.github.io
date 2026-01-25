@@ -82,7 +82,7 @@
         { name: 'Handyman', image: V+D+"HandyMan-Oscuro.png", link: 'https://e.pcloud.link/publink/show?code=kZSzFNZjt1IqWKOCeHxvSjw7OSoQLH3AFRy' },
         { name: 'El Ladrillo', image: V+D+"ElLadrillo-RESIZE"+".png", link: 'https://e.pcloud.link/publink/show?code=XZ1zFNZM2VF1mNhDC752jgqFDyY8JW02MLX' },
       ],
-      cv: [
+      equipo1993: [
         { name: 'Clive Burrows', image: C+P+"CliveBurrows.png", link: '' },
         { name: 'Stephen Lincoln', image: C+P+"StephenLincoln.png", link: '' },
         { name: 'Mathew Williams', image: C+P+"MathewWilliams.png", link: '' },
@@ -94,6 +94,9 @@
         { name: 'Amelia Roy ', image: C+P+"AmeliaRoy.png", link: '' },
         { name: 'Emma Roy', image: C+P+"EmmaRoy.png", link: '' },
         { name: 'Allan Paul', image: C+P+"AllanPaul.png", link: '' },
+      ],
+      villanos90s: [
+        { name: 'Relojero', image: C+A+".png", link: '' },
       ],
     }
   };

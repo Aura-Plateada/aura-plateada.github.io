@@ -9,7 +9,7 @@ const recopilatoriosInfo = {
         // Cada operación puede ser:
         // - String: 'TW12.jpg' (enlace por defecto a la imagen)
         // - Objeto: { image: 'TW12.jpg', link: 'url' } (enlace personalizado)
-        operaciones: [{ image: 'TW12.jpg', link: 'personajes.html' }, { image: 'TW18.jpg', link: '../Imágenes/partidas/JOYERIA-FUTURO.jpg' }, { image: 'TW34.jpg', link: 'actual.html' }, { image: 'SAC1.jpg', link: 'actual.html' } ]
+        operaciones: [{ image: 'TW12.jpg', link: 'personajes.html' }, { image: 'TW18.jpg', link: '../Imágenes/partidas/JOYERIA-FUTURO.jpg' }, { image: 'TW34.jpg', link: 'sac.html' }, { image: 'SAC1.jpg', link: 'sac.html' }, { image: 'SAC2.jpg', link: 'sac.html' } ]
     },
     'Manual Basico': {
         portada: 'ManualBasico.jpg',
@@ -75,6 +75,12 @@ const recopilatoriosInfo = {
         portada: 'HPC.jpg',
         link: '../ColecciónOperacionesVariasEtapas.pdf',
         operaciones: ['S226.jpg', 'TW95.jpg', 'TW96.jpg', 'TW97.jpg', 'TW98.jpg', 'S446.jpg', 'S447.jpg', 'S448.jpg', 'S449.jpg', 'S670.jpg']
+    },
+    'EL CICLO DE LA VIOLENCIA': {
+        portada: 'IC628.jpg',
+        operaciones: ["IC601.jpg",
+    "IC628.png", 'TS2-1.png', 'TS2-2.png',
+    "S637.png", 'IC683.png',]
     },
     
 };
@@ -143,14 +149,15 @@ const ordenCronologico = [
     'S226.jpg',
     'S302.jpg',
     "S321.jpg",
-    "TW12.jpg", "TW18.jpg", "TW34.jpg",
+    "TW12.jpg", "TW18.jpg", "TW34.jpg", 'SAC1.jpg', 'SAC2.jpg',
     'TW89.jpg',
     'TW95.jpg', 'TW96.jpg', 'TW97.jpg', 'TW98.jpg',
     "IC477.png",
     'S446.jpg', 'S447.jpg', 'S448.jpg', 'S449.jpg',
     'S460.png',
     'TW156.png',
-    "IC628.png",
+    "IC601.jpg",
+    "IC628.png", 'TS2-1.png', 'TS2-2.png',
     "S637.png",
     'IC683.png',
     "S654.png", 
@@ -275,6 +282,33 @@ function generateRecopilatorioSection(nombreRecopilatorio, info, allCollections)
             </div>
         </div>
     </div><hr class="my-5">`;
+    
+    return html;
+}
+
+// Función para generar solo la galería de operaciones (sin título ni portada del recopilatorio)
+function generateRecopilatorioSectionSimple(nombreRecopilatorio, info, allCollections) {
+    let html = `
+    <div class="gallery-container">
+        <div class="row g-2">`;
+    
+    // Generar las portadas de las operaciones
+    info.operaciones.forEach(op => {
+        const imageName = typeof op === 'string' ? op : op.image;
+        const imagePath = findImagePath(imageName, allCollections);
+        const displayName = imageName.replace(/\.(jpg|jpeg|png|gif|webp)$/i, '');
+        const href = typeof op === 'object' && op.link ? op.link : imagePath;
+        html += `
+            <div class="col-2">
+                <a href="${href}" target="_blank">
+                    <img src="${imagePath}" class="img-fluid rounded shadow-sm gallery-image" alt="${displayName}" style="cursor: pointer; height: 100%; width: 100%;">
+                </a>
+            </div>`;
+    });
+    
+    html += `
+        </div>
+    </div>`;
     
     return html;
 }
@@ -444,6 +478,47 @@ function initOperacionesGalleries() {
     } catch (error) {
         console.error('Error al cargar la lista de operaciones:', error);
         container.innerHTML = `<p class="text-center text-danger">Error al cargar las galerías de operaciones: ${error.message}</p>`;
+    }
+}
+
+// Función para renderizar un solo recopilatorio en un contenedor específico
+function renderSingleRecopilatorio(containerId, nombreRecopilatorio, simple = false) {
+    const container = document.getElementById(containerId);
+    if (!container) {
+        console.error(`No se encontró el contenedor ${containerId}`);
+        return;
+    }
+    
+    // Verificar que comicsData está disponible
+    if (typeof comicsData === 'undefined') {
+        console.error('comicsData no está definido. Asegúrate de cargar comics-data.js antes de operaciones-gallery.js');
+        container.innerHTML = '<p class="text-center text-danger">Error: Datos de operaciones no disponibles.</p>';
+        return;
+    }
+    
+    try {
+        if (!comicsData.collections || !Array.isArray(comicsData.collections)) {
+            throw new Error('Formato de datos inválido');
+        }
+        
+        const allCollections = comicsData.collections;
+        
+        // Verificar si el recopilatorio existe
+        const info = recopilatoriosInfo[nombreRecopilatorio];
+        if (!info) {
+            container.innerHTML = `<p class="text-center text-warning">No se encontró el recopilatorio "${nombreRecopilatorio}".</p>`;
+            return;
+        }
+        
+        // Generar la sección del recopilatorio (con o sin título)
+        const htmlContent = simple 
+            ? generateRecopilatorioSectionSimple(nombreRecopilatorio, info, allCollections)
+            : generateRecopilatorioSection(nombreRecopilatorio, info, allCollections);
+        container.innerHTML = htmlContent;
+        
+    } catch (error) {
+        console.error('Error al cargar el recopilatorio:', error);
+        container.innerHTML = `<p class="text-center text-danger">Error al cargar el recopilatorio: ${error.message}</p>`;
     }
 }
 

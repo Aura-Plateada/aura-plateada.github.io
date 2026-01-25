@@ -82,6 +82,7 @@ const comicsData = {
         "IC27.png",
         "IC308.png",
         "IC477.png",
+        "IC601.jpg",
         "IC628.png",
         "IC683.png",
         "IC709.png",
@@ -197,7 +198,8 @@ const comicsData = {
     {
       "name": "Sector Ágata Carmín",
       "images": [
-        "SAC1.jpg"
+        "SAC1.jpg",
+        "SAC2.jpg",
       ]
     },
     {

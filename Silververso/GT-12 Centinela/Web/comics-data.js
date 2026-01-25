@@ -323,7 +323,8 @@ const comicsData = {
     {
       "name": "Sector Ágata Carmín",
       "images": [
-        "SAC1.jpg"
+        "SAC1.jpg",
+        "SAC2.jpg"
       ]
     }
   ]
