@@ -78,8 +78,9 @@ const recopilatoriosInfo = {
     },
     'EL CICLO DE LA VIOLENCIA': {
         portada: 'IC628.jpg',
-        operaciones: ["IC601.jpg",
-    "IC628.png", 'TS2-1.png', 'TS2-2.png',
+        operaciones: ["IC590.jpg", "IC592.jpg", "IC601.jpg",
+    "S561.jpg", 
+    "IC628.png", "S599.jpg", "S600.jpg", "S603.jpg", 'TS2-1.png', 'TS2-2.png',
     "S637.png", 'IC683.png',]
     },
     
