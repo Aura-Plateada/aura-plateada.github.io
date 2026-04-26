@@ -9,7 +9,16 @@ const recopilatoriosInfo = {
         // Cada operación puede ser:
         // - String: 'TW12.jpg' (enlace por defecto a la imagen)
         // - Objeto: { image: 'TW12.jpg', link: 'url' } (enlace personalizado)
-        operaciones: [{ image: 'TW12.jpg', link: 'personajes.html' }, { image: 'TW18.jpg', link: '../Imágenes/partidas/JOYERIA-FUTURO.jpg' }, { image: 'TW34.jpg', link: 'sac.html' }, { image: 'SAC1.jpg', link: 'sac.html' }, { image: 'SAC2.jpg', link: 'sac.html' } ]
+        operaciones: [{ image: 'TW12.jpg', link: 'personajes.html' },
+             { image: 'TW18.jpg', link: '../Imágenes/partidas/JOYERIA-FUTURO.jpg' }, 
+             { image: 'TW34.jpg', link: 'sac.html' }, { image: 'SAC1.jpg', link: 'sac.html' }, 
+             { image: 'SAC2.jpg', link: 'sac.html' }, 
+             { image: 'SAC3.jpg', link: 'https://auraplateada.blogspot.com/2026/02/el-regreso-de-hypnos-legacy.html' },
+            { image: 'SAC4.jpg', link: 'https://auraplateada.blogspot.com/2026/02/el-regreso-de-hypnos-legacy.html' },
+        { image: 'SAC27.jpg', link: 'https://auraplateada.blogspot.com/2026/03/sector-agata-carmin.html' },
+        { image: 'SAC29.png', link: 'https://auraplateada.blogspot.com/2026/03/buenas-noches-noche-del-dano.html' },
+        { image: 'SAC30.png', link: 'https://auraplateada.blogspot.com/2026/04/final-de-la-campana-del-sector-agata.html' }
+    ]
     },
     'Manual Basico': {
         portada: 'ManualBasico.jpg',
@@ -149,6 +158,7 @@ const ordenCronologico = [
     'S206.jpg',
     'S226.jpg',
     'S302.jpg',
+    "TS2-13.jpg","TS2-14.jpg","TS2-15.jpg","TS2-16.jpg",
     "S321.jpg",
     "TW12.jpg", "TW18.jpg", "TW34.jpg", 'SAC1.jpg', 'SAC2.jpg',
     'TW89.jpg',

@@ -196,6 +196,7 @@ const comicsData = {
         "S227.png",
         "S262.png",
         "S263.png",
+        "SA9.png",
         "S275.png",
         "S302.jpg",
         "S321.jpg",
@@ -237,8 +238,8 @@ const comicsData = {
         "S771.jpg",
         "S772.jpg",
         "S773.jpg",
-        "SA9.png",
         "SA29.png",
+        "SS15.jpg",
         "SS16.jpg"
       ]
     },
@@ -270,7 +271,11 @@ const comicsData = {
         "TS2-11.png",
         "TS2-12.png",
         "TS2-T.jpg",
-        "TS-LS.jpg"
+        "TS-LS.jpg",
+        "TS2-13.jpg",
+        "TS2-14.jpg",
+        "TS2-15.jpg",
+        "TS2-16.jpg",
       ]
     },
     {
@@ -330,7 +335,12 @@ const comicsData = {
       "name": "Sector Ágata Carmín",
       "images": [
         "SAC1.jpg",
-        "SAC2.jpg"
+        "SAC2.jpg",
+        "SAC3.jpg",
+        "SAC4.jpg",
+        "SAC27.jpg",
+        "SAC29.png",
+        "SAC30.png",
       ]
     }
   ]
