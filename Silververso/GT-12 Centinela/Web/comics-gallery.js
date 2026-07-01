@@ -87,7 +87,8 @@ const sueltosCollections = [
     'Sentinel 2070',
     'Sentinel by Gaslight',
     'The Eyes of the Sentinel',
-    'The throne of the Sentinel'
+    'The throne of the Sentinel',
+    'Centinela Rojo'
 ];
 
 // Función para generar una galería de comics

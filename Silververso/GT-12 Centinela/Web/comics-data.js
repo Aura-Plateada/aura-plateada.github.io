@@ -1,5 +1,6 @@
 // comics-data.js - Datos generados automáticamente
 // Generado el: lun 15 dic 2025 07:58:29 WET
+// ESTA ES LA BUENA
 
 const comicsData = {
   "collections": [
@@ -105,14 +106,19 @@ const comicsData = {
         "IC592.jpg",
         "IC601.jpg",
         "IC628.png",
+        "ICA16.jpg",
         "IC683.png",
         "IC709.png",
         "IC746.png",
+        "IC761.jpg",
+        "IC762.jpg",
         "IC782.png",
         "IC783.png",
         "IC784.png",
         "IC787.png",
-        "IC790.png"
+        "IC790.png",
+        "IC791.jpg",
+
       ]
     },
     {
@@ -211,20 +217,25 @@ const comicsData = {
         "S599.jpg", 
         "S600.jpg", 
         "S603.jpg",
+        "SA21.jpg",
         "S637.png",
         "S654.png",
         "S670.jpg",
         "S717.png",
+        "S720.jpg",
+        "SA29.png",
         "S746.png",
         "S747.png",
         "S748.png",
         "S749.png",
+        "SS15.jpg",
         "S755.png",
         "S756.png",
         "S757.jpg",
         "S758.jpg",
         "S759.jpg",
         "S760.jpg",
+        "SS16.jpg",
         "S761.jpg",
         "S762.jpg",
         "S763.jpg",
@@ -238,9 +249,7 @@ const comicsData = {
         "S771.jpg",
         "S772.jpg",
         "S773.jpg",
-        "SA29.png",
-        "SS15.jpg",
-        "SS16.jpg"
+        
       ]
     },
     {
@@ -281,6 +290,8 @@ const comicsData = {
     {
       "name": "The Eyes of the Sentinel",
       "images": [
+        "TES1.jpg",
+        "TES2.jpg",
 
       ]
     },
@@ -341,6 +352,15 @@ const comicsData = {
         "SAC27.jpg",
         "SAC29.png",
         "SAC30.png",
+      ]
+    },
+    {
+      "name": "Centinela Rojo",
+      "images": [
+        "RS1.jpg",
+        "RS2.jpg",
+        "RS3.jpg",
+        "RS4.jpg",
       ]
     }
   ]
